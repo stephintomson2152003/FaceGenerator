@@ -5,7 +5,7 @@ def generate_random_rgb():
     # Choose a random channel to set to 255
     channel = random.choice([0, 1, 2])
     rgb = [0, 0, 0]
-    rgb[channel] = 255
+    rgb[channel] = 256
     return rgb
 
 def create_random_grid(size=12):

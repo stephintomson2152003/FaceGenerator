@@ -42,9 +42,9 @@ def check1(test_info, n):
                 blue_avg = blue / count
                 
                 # Normalize to percentage of 255
-                red_pct = (red_avg / 255) * 100
-                green_pct = (green_avg / 255) * 100
-                blue_pct = (blue_avg / 255) * 100                
+                red_pct = (red_avg / 256) * 100
+                green_pct = (green_avg / 256) * 100
+                blue_pct = (blue_avg / 256) * 100                
                 # Store formatted string
                 information[i][j] = f"{red_pct:.0f} {green_pct:.0f} {blue_pct:.0f} "
             else:
